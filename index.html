@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<!-- Phone nav -->
+<nav class="phone-nav">
+    <h2>Weather hub</h2>
+
+
+    <ul>
+        <li>Home</li>
+        <li>about us</li>
+        <li>contact us</li>
+    </ul>
+
+      <i class="fa-solid fa-bars fa-lg"></i>
+</nav>
+
+<!-- Computer nav -->
+<nav class="pc-nav">
+    <h2>Weather hub</h2>
+
+   
+    <ul>
+        <li>Home</li>
+        <li>about us</li>
+        <li>contact us</li>
+    </ul>
+</nav>
+
+
+
+    <div class="container">
+        <input id="search_bar" class="search" type="text" placeholder="enter city">
+        <button id="btn" onclick="getCityWeather()">ok</button>
+<div class="icon">
+    <img  src="./images/animated/cloudy-night-1.svg" alt="">
+</div>
+<div class="info">
+<h1 id="degree">--</h1>
+<h5 id="status">-----------</h5>
+<h3 id="city">---------</h3>
+<div class="info2">
+    <div class="wind-speed">
+        <img  src="./images/wind 2.png" alt="">
+        <p id="wind-km">-- km / h</p>
+    </div>
+    <div class="humidity">
+         <img src="./images/humidity 2.png" alt="">
+        <p id="humidty-ps">-- %</p>
+    </div>
+   
+</div>
+ <h4 id="cityCountry"> ----- , ------</h4>
+</div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
