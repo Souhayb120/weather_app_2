@@ -7,8 +7,9 @@ const humidty_ps = document.getElementById('humidty-ps');
 const cityCountry = document.getElementById('cityCountry');
 const img = document.getElementById('ws');
 const searchCity = document.getElementById('search_bar');
-
-
+const dark = document.getElementById('btn-dark');
+const dark_pc = document.getElementById('btn-dark-pc');
+let isDark = false;
  async function getCityWeather(){
 const cityFound = searchCity.value;
 const responce = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityFound}&appid=36ae07671208095b06a5bf6a19bc2e80&units=metric
@@ -44,6 +45,29 @@ case 'Clear':
 }
 
 }
+
+dark.addEventListener('click',()=>{
+  if(!isDark){
+   document.body.style.transition = 'background 0.5s ease';
+  document.body.style.background = 'linear-gradient(90deg, rgba(10, 50, 70, 1) 0%, rgba(40, 60, 120, 1) 50%, rgba(70, 80, 150, 1) 100%)';
+isDark = true;
+  }else{
+   document.body.style.background =  'linear-gradient(90deg, rgba(59, 157, 196, 1) 0%, 50%, rgba(104, 117, 227, 1) 100%)';
+   isDark = false;
+  }
+  
+})
+dark_pc.addEventListener('click',()=>{
+  if(!isDark){
+   document.body.style.transition = 'background 0.5s ease';
+  document.body.style.background = 'linear-gradient(90deg, rgba(10, 50, 70, 1) 0%, rgba(40, 60, 120, 1) 50%, rgba(70, 80, 150, 1) 100%)';
+isDark = true;
+  }else{
+   document.body.style.background =  'linear-gradient(90deg, rgba(59, 157, 196, 1) 0%, 50%, rgba(104, 117, 227, 1) 100%)';
+   isDark = false;
+  }
+  
+})
 
 document.addEventListener("keypress", (event) => {
   const keyName = event.key;
