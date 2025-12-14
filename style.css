@@ -1,6 +1,6 @@
 body{
     background: #3b9dc4;
-background: linear-gradient(90deg, rgba(59, 157, 196, 1) 0%, rgba(87, 199, 171, 1) 50%, rgba(104, 117, 227, 1) 100%);
+background: linear-gradient(90deg, rgba(59, 157, 196, 1) 0%, 50%, rgba(104, 117, 227, 1) 100%);
 color: white;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 letter-spacing: 2px;
@@ -38,7 +38,7 @@ nav{
 .icon{
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
+ 
 }
 .icon > img{
     width: 10rem;
@@ -61,11 +61,12 @@ gap: 1rem;
 }
 
 .search{
-    width: 50%;
+    width: 80%;
+    font-size: large;
     height: 2em;
     outline: none;
     border-radius: 20rem;
     border: rgb(118, 166, 193) 1px solid;
-    padding: 0.2em;
+    padding: 0.2em 0.5em;
 }
 
